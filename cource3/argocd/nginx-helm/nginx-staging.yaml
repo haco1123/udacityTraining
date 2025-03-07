@@ -12,6 +12,6 @@ spec:
     helm:
       valueFiles:
       - values-staging.yaml
-    path: cource3/argocd/nginx-helm/
+    path: cource3/argocd/nginx-helm
     repoURL: https://github.com/haco1123/udacityTraining
     targetRevision: HEAD
