@@ -14,7 +14,7 @@ resources:
     memory: 128Mi
 
 service:
-  port:8111
+  port: 8111
   type: ClusterIP
 
 configmap:
