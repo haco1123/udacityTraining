@@ -6,11 +6,12 @@ namespace:
 image:
   repository: nginx 
   tag: 1.18.0
+  pullPolicy: IfNotPresent
 
 resources:
   requests:
     cpu: 50m
-    memory: 256Mi
+    memory: 128Mi
 
 service:
   port:8111
