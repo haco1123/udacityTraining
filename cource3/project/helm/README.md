@@ -1,3 +1,3 @@
-## Helm Chart 
+## Kubernetes Declarative Manifests 
 
-Place the Helm Chart files in this directory.
+Place the Kubernetes declarative manifests in this directory.

@@ -1,0 +1,31 @@
+namespace:
+  name: sandbox
+ 
+image:
+  repository: leon494/techtrends 
+  tag: latest
+  pullPolicy: IfNotPresent
+
+resources:
+  requests:
+    cpu: 250m
+    memory: 64Mi
+  limits:
+    cpu: 500m
+    memory: 128Mi
+
+service:
+  port: 4111
+  targetPort: 3111
+  protocol: TCP
+  type: ClusterIP
+
+containerPort: 3111
+
+livenessProbe:
+  path: /healthz
+
+readinessProbe:
+  path: /healthz
+ 
+replicaCount: 1

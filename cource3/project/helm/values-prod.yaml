@@ -1,0 +1,23 @@
+namespace:
+  name: prod
+ 
+image:
+  repository: leon494/techtrends 
+  tag: latest
+  pullPolicy: Always
+
+resources:
+  requests:
+    cpu: 350m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 256Mi
+
+service:
+  port: 7111
+  targetPort: 3111
+  protocol: TCP
+  type: ClusterIP
+
+replicaCount: 5
