@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: python-manifests
-    repoURL: https://github.com/haco1123/argocd-demo 
+    path: cource3/argocd/argocd-demo/python-manifests
+    repoURL: https://github.com/haco1123/udacityTraining 
     targetRevision: HEAD
   syncPolicy: {}
