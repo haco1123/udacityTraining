@@ -99,7 +99,7 @@ def metrics():
             mimetype='application/json'
     )
     logger.log('Metrics request successfull.')
-    return respon
+    return response
 
 # start the application on port 3111
 if __name__ == "__main__":
