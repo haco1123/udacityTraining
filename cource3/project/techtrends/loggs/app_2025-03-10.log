@@ -1,0 +1,354 @@
+[Mon, 10 Mar 2025 09:42:24] WARNING [_internal.py._log:225]  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[Mon, 10 Mar 2025 09:42:24] INFO [_internal.py._log:225]  * Running on http://192.168.178.44:3111/ (Press CTRL+C to quit)
+[Mon, 10 Mar 2025 09:42:28] DEBUG [logger.py.log:18] ('An existing article is retrieved.', 'Title: 2020 CNCF Annual Report')
+[Mon, 10 Mar 2025 09:42:28] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:42:28] "GET /1 HTTP/1.1" 200 -
+[Mon, 10 Mar 2025 09:42:29] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:42:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+[Mon, 10 Mar 2025 09:42:36] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:42:36] "GET / HTTP/1.1" 200 -
+[Mon, 10 Mar 2025 09:42:36] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:42:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+[Mon, 10 Mar 2025 09:42:37] DEBUG [logger.py.log:18] ("'About Us' page is retrieved",)
+[Mon, 10 Mar 2025 09:42:37] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:42:37] "GET /about HTTP/1.1" 200 -
+[Mon, 10 Mar 2025 09:42:37] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:42:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+[Mon, 10 Mar 2025 09:42:44] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:42:44] "GET / HTTP/1.1" 200 -
+[Mon, 10 Mar 2025 09:42:44] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:42:44] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+[Mon, 10 Mar 2025 09:42:46] ERROR [app.py.log_exception:1455] Exception on /create [GET]
+Traceback (most recent call last):
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\OneDrive\Dokumente\Udacity\cloud native application nanodegree\udacityTraining\cource3\project\techtrends\app.py", line 74, in create
+    logger.log('A new article is created.', f"Title: {title}")
+                                                      ^^^^^
+UnboundLocalError: cannot access local variable 'title' where it is not associated with a value
+[Mon, 10 Mar 2025 09:42:46] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:42:46] "[35m[1mGET /create HTTP/1.1[0m" 500 -
+[Mon, 10 Mar 2025 09:43:45] WARNING [_internal.py._log:225]  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[Mon, 10 Mar 2025 09:43:45] INFO [_internal.py._log:225]  * Running on http://192.168.178.44:3111/ (Press CTRL+C to quit)
+[Mon, 10 Mar 2025 09:43:55] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:43:55] "GET / HTTP/1.1" 200 -
+[Mon, 10 Mar 2025 09:43:55] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:43:55] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+[Mon, 10 Mar 2025 09:43:57] DEBUG [logger.py.log:18] ('An existing article is retrieved.', 'Title: 2020 CNCF Annual Report')
+[Mon, 10 Mar 2025 09:43:57] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:43:57] "GET /1 HTTP/1.1" 200 -
+[Mon, 10 Mar 2025 09:43:57] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:43:57] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+[Mon, 10 Mar 2025 09:43:59] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:43:59] "GET /create HTTP/1.1" 200 -
+[Mon, 10 Mar 2025 09:43:59] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:43:59] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+[Mon, 10 Mar 2025 09:44:12] DEBUG [logger.py.log:18] ('A new article is created.', 'Title: Test')
+[Mon, 10 Mar 2025 09:44:12] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:44:12] "[32mPOST /create HTTP/1.1[0m" 302 -
+[Mon, 10 Mar 2025 09:44:12] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:44:12] "GET / HTTP/1.1" 200 -
+[Mon, 10 Mar 2025 09:44:12] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:44:12] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+[Mon, 10 Mar 2025 09:44:59] DEBUG [logger.py.log:18] ('Status request successfull:', <Response 26 bytes [200 OK]>)
+[Mon, 10 Mar 2025 09:44:59] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:44:59] "GET /healthz HTTP/1.1" 200 -
+[Mon, 10 Mar 2025 09:45:17] ERROR [app.py.log_exception:1455] Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\OneDrive\Dokumente\Udacity\cloud native application nanodegree\udacityTraining\cource3\project\techtrends\app.py", line 97, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count": connection_count, "post_count": posts}}),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Row is not JSON serializable
+[Mon, 10 Mar 2025 09:45:17] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:45:17] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+[Mon, 10 Mar 2025 09:47:36] WARNING [_internal.py._log:225]  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[Mon, 10 Mar 2025 09:47:36] INFO [_internal.py._log:225]  * Running on http://192.168.178.44:3111/ (Press CTRL+C to quit)
+[Mon, 10 Mar 2025 09:47:41] ERROR [app.py.log_exception:1455] Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\OneDrive\Dokumente\Udacity\cloud native application nanodegree\udacityTraining\cource3\project\techtrends\app.py", line 98, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count": connection_count, "post_count": posts}}),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Row is not JSON serializable
+[Mon, 10 Mar 2025 09:47:41] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:47:41] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+[Mon, 10 Mar 2025 09:50:40] WARNING [_internal.py._log:225]  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[Mon, 10 Mar 2025 09:50:40] INFO [_internal.py._log:225]  * Running on http://192.168.178.44:3111/ (Press CTRL+C to quit)
+[Mon, 10 Mar 2025 09:50:56] ERROR [app.py.log_exception:1455] Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\OneDrive\Dokumente\Udacity\cloud native application nanodegree\udacityTraining\cource3\project\techtrends\app.py", line 98, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count": connection_count, "post_count": posts}}),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Row is not JSON serializable
+[Mon, 10 Mar 2025 09:50:56] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:50:56] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+[Mon, 10 Mar 2025 09:51:56] WARNING [_internal.py._log:225]  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[Mon, 10 Mar 2025 09:51:56] INFO [_internal.py._log:225]  * Running on http://192.168.178.44:3111/ (Press CTRL+C to quit)
+[Mon, 10 Mar 2025 09:51:59] ERROR [app.py.log_exception:1455] Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\OneDrive\Dokumente\Udacity\cloud native application nanodegree\udacityTraining\cource3\project\techtrends\app.py", line 99, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count": connection_count, "post_count": posts}}),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Row is not JSON serializable
+[Mon, 10 Mar 2025 09:51:59] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:51:59] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+[Mon, 10 Mar 2025 09:52:48] WARNING [_internal.py._log:225]  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[Mon, 10 Mar 2025 09:52:48] INFO [_internal.py._log:225]  * Running on http://192.168.178.44:3111/ (Press CTRL+C to quit)
+[Mon, 10 Mar 2025 09:52:51] ERROR [app.py.log_exception:1455] Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\OneDrive\Dokumente\Udacity\cloud native application nanodegree\udacityTraining\cource3\project\techtrends\app.py", line 99, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count": connection_count, "post_count": posts}}),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Row is not JSON serializable
+[Mon, 10 Mar 2025 09:52:51] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:52:51] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+[Mon, 10 Mar 2025 09:55:10] WARNING [_internal.py._log:225]  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[Mon, 10 Mar 2025 09:55:10] INFO [_internal.py._log:225]  * Running on http://192.168.178.44:3111/ (Press CTRL+C to quit)
+[Mon, 10 Mar 2025 09:55:16] ERROR [app.py.log_exception:1455] Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\OneDrive\Dokumente\Udacity\cloud native application nanodegree\udacityTraining\cource3\project\techtrends\app.py", line 98, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count": connection_count, "post_count": posts}}),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Row is not JSON serializable
+[Mon, 10 Mar 2025 09:55:16] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:55:16] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+[Mon, 10 Mar 2025 09:55:37] WARNING [_internal.py._log:225]  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[Mon, 10 Mar 2025 09:55:37] INFO [_internal.py._log:225]  * Running on http://192.168.178.44:3111/ (Press CTRL+C to quit)
+[Mon, 10 Mar 2025 09:55:43] ERROR [app.py.log_exception:1455] Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\OneDrive\Dokumente\Udacity\cloud native application nanodegree\udacityTraining\cource3\project\techtrends\app.py", line 98, in metrics
+    response=json.dumps({"status":"success","code":0,"data":{"db_connection_count": connection_count, "post_count": posts}}),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Row is not JSON serializable
+[Mon, 10 Mar 2025 09:55:43] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:55:43] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+[Mon, 10 Mar 2025 09:57:09] WARNING [_internal.py._log:225]  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[Mon, 10 Mar 2025 09:57:09] INFO [_internal.py._log:225]  * Running on http://192.168.178.44:3111/ (Press CTRL+C to quit)
+[Mon, 10 Mar 2025 09:57:15] ERROR [app.py.log_exception:1455] Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leong\OneDrive\Dokumente\Udacity\cloud native application nanodegree\udacityTraining\cource3\project\techtrends\app.py", line 96, in metrics
+    print('row', posts.fetchone())
+                 ^^^^^^^^^^^^^^^^
+sqlite3.ProgrammingError: Cannot operate on a closed database.
+[Mon, 10 Mar 2025 09:57:15] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:57:15] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+[Mon, 10 Mar 2025 09:58:41] WARNING [_internal.py._log:225]  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[Mon, 10 Mar 2025 09:58:41] INFO [_internal.py._log:225]  * Running on http://192.168.178.44:3111/ (Press CTRL+C to quit)
+[Mon, 10 Mar 2025 09:58:45] DEBUG [logger.py.log:18] ('Metrics request successfull:', <Response 85 bytes [200 OK]>)
+[Mon, 10 Mar 2025 09:58:45] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:58:45] "GET /metrics HTTP/1.1" 200 -
+[Mon, 10 Mar 2025 09:59:02] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:59:02] "GET / HTTP/1.1" 200 -
+[Mon, 10 Mar 2025 09:59:03] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:59:03] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+[Mon, 10 Mar 2025 09:59:12] DEBUG [logger.py.log:18] ('An existing article is retrieved.', 'Title: 2020 CNCF Annual Report')
+[Mon, 10 Mar 2025 09:59:12] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:59:12] "GET /1 HTTP/1.1" 200 -
+[Mon, 10 Mar 2025 09:59:12] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:59:12] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+[Mon, 10 Mar 2025 09:59:18] DEBUG [logger.py.log:18] ('Metrics request successfull:', <Response 85 bytes [200 OK]>)
+[Mon, 10 Mar 2025 09:59:18] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:59:18] "GET /metrics HTTP/1.1" 200 -
+[Mon, 10 Mar 2025 09:59:25] DEBUG [logger.py.log:18] ('Status request successfull:', <Response 26 bytes [200 OK]>)
+[Mon, 10 Mar 2025 09:59:25] INFO [_internal.py._log:225] 192.168.178.44 - - [10/Mar/2025 09:59:25] "GET /healthz HTTP/1.1" 200 -
